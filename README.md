@@ -1,4 +1,4 @@
-# Todo Application
+# Todo App
 
 A feature-rich Todo App built with Flutter and Firebase. This app supports user authentication, cloud-based task storage, image uploads, OCR-based text extraction, push notifications, and more.
 
