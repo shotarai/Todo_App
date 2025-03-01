@@ -75,25 +75,3 @@ lib/
  │    ├── task_card.dart             # Task list card UI
  │    ├── image_picker_widget.dart   # Image picker widget
 ```
-
-## Troubleshooting
-
-### 1. Firebase Initialization Error
-```sh
-[core/not-initialized] Firebase has not been correctly initialized.
-```
-**Solution:** Ensure `Firebase.initializeApp()` is called before using Firebase services. Also, verify Firebase is configured properly.
-
-### 2. iOS CocoaPods Issues
-```sh
-[!] CocoaPods could not find compatible versions for pod "google_mlkit_text_recognition"
-```
-**Solution:**
-```sh
-cd ios
-rm -rf Pods Podfile.lock
-pod install --repo-update
-cd ..
-flutter clean
-flutter pub get
-```
